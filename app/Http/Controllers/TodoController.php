@@ -63,6 +63,7 @@ class TodoController extends Controller
             'name' => 'required|min:6|max:20',
             'desc' => 'required'
         ]);
+        
         $data = request()->all();
         $todo = Todo::find($id);
         $todo->name = $data['name'];

@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //External Service Provider
+        Weidner\Goutte\GoutteServiceProvider::class,
+
     ],
 
     /*
@@ -226,6 +229,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        //External Pacakage
+        'Goutte' => Weidner\Goutte\GoutteFacade::class,
 
     ],
 
